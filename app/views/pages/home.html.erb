@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href=“https://fonts.googleapis.com/css?family=Roboto:400|Roboto+Slab” rel=“stylesheet”>
+   </head>    
+<style>
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+   font-family: ‘Roboto’, sans-serif;
+    background-color: #fff;
+   font-weight: 400;
+}
+   
+   header {
+       width=“100%“;
+       height=80px;
+       background-color: #75818f ;
+       padding-left: 50px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       margin-bottom: 20px;
+   }  
+   
+   h2 {
+       font-family: ‘Roboto Slab’, serif;
+       color: #2f4f4f ;
+       padding-left: 30vw;
+       padding-bottom: 20px;
+       
+   }
+   
+input[type=text], select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   box-sizing: border-box;
+}
+
+input[type=submit] {
+   width: 33%;
+   background-color: #2f4f4f ;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background-color: #00688b ;
+   
+}
+
+div {
+   border-radius: 5px;
+   background-color: #fff;
+   padding-left: 30vw;
+   padding-right: 30vw;
+}
+</style>
+<body>
+<header>
+  <img src=“operationCode.png”>
+</header>
+   
+   
+<h2>Operation Code Sign Up</h2>
+
+<div>
+ <form action=“/action_page.php”>
+   <label for=“fname”>FIRST NAME</label>
+   <input type=“text” id=“fname” name=“firstname” placeholder=“Your name..“>
+
+   <label for=“lname”>LAST NAME</label>
+   <input type=“text” id=“lname” name=“lastname” placeholder=“Your last name..“>
+
+     <label for=“lname”>YOUR LOCATION</label>
+   <input type=“text” id=“location” name=“location” placeholder=“Your location”>
+     
+   <label for=“interests”>WHAT ARE YOU INTERESTED IN LEARNING ABOUT?</label>
+   <select id=“softDev” name=“Software Development”>
+     <option value=“softDev”>Software Development</option>
+     <option value=“design”>Design</option>
+     <option value=“networking”>Networking</option>
+   </select>
+     
+       <label for=“experience”>WHAT IS YOUR TECH EXPERIENCE LEVEL?</label>
+   <select id=“beginner” name=“Beginner”>
+     <option value=“intermediate”>Intermediate</option>
+     <option value=“expert”>Expert</option>
+   </select>
+     
+       <label for=“role”>WHAT IS YOUR ROLE IN THE COMMUNITY?</label>
+   <select id=“activeDuty” name=“Present Service Member”>
+     <option value=“veteran”>Veteran</option>
+     <option value=“spouse”>Military Spouse / Family Member</option>
+   </select>
+ 
+   <input type=“submit” value=“Submit”>
+ </form>
+</div>
+
+</body>
+</html>
